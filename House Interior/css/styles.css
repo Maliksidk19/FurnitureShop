@@ -1,0 +1,81 @@
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+font-family: 'Gotham Pro', sans-serif;
+}
+body {
+width: 100%;
+min-height: 100vh;
+line-height: 1.5;
+-webkit-font-smoothing: antialiased;
+scroll-behavior: smooth;
+}
+
+:root {
+--bg-color: rgb(247, 188, 88);
+--text-color: rgb(42, 42, 42);
+--body-color: rgb(245, 245, 245);
+}
+
+header {
+    background-image: url(../img/hero1.jpg);
+    height: 76vh;
+    background-position: center bottom;
+    background-size: cover;
+}
+
+.navbar-nav .active {
+    background-color: var(--bg-color);
+    transition: all 0.3 ease-in-out;
+    border-bottom-right-radius: 20px;
+    filter: drop-shadow(1px 1px 1px black);
+}
+
+.navbar-brand {
+    border-bottom: 3px solid var(--bg-color);
+    padding-bottom: 0;
+}
+
+#header {
+    margin-top: 9rem;
+}
+
+#header h1 {
+    letter-spacing: 0.3em;
+}
+
+#header p {
+    letter-spacing: 0.1em;
+}
+
+.btn {
+    background-color: var(--bg-color);
+}
+
+button:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.video-img {
+    opacity: 0.7;
+    border-radius: 10px;
+    filter: blur(.5px);
+}
+
+.icon {
+    position: absolute;
+    left: 46%;
+    top: 41%;
+    font-size: 4rem;
+    color: var(--bg-color)
+}
+
+.col > img {
+    opacity: 0.8;
+}
+
+.news-img {
+    opacity: 1;
+}
